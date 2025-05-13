@@ -21,11 +21,9 @@ img {
 }
 body{
     width: 100vw;
-    overflow: hidden;
     background-color: #0E0E0E;
     color: #fff;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    
 }
 h2{
     font-family: "Cormorant Upright", serif;
@@ -717,7 +715,7 @@ header nav ul li a{
 }
 #project2 .inner ul li .image{
     width: 20%;
-    aspect-ratio: 2 / 5; 
+    aspect-ratio: 2 / 6; 
     max-height: 140px;
     filter: grayscale(1);
     transition: 0.3s ease-out;
@@ -1312,6 +1310,10 @@ footer .bottom a{
     }
 }
 @media only screen and (max-width: 580px){
+    .loading-text {
+    font-size: 1em;
+    }
+    
     #intro {
         padding: 200px 20px;
     }
@@ -1320,7 +1322,7 @@ footer .bottom a{
     }
     #main .title h2{
         font-size: 4em;
-        margin-top: 500px;
+        margin-top: 400px;
     }
     #main .bottom h3{
         font-size: 4em;
