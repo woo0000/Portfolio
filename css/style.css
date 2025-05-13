@@ -1422,4 +1422,12 @@ footer .bottom a{
     footer .bottom a{
         font-size: 0.75em;
     }
+    @media (hover: none) and (pointer: coarse) {
+    #project2 .inner ul li:hover .image,
+    #project2 .inner ul li:hover .title .right {
+        width: initial;
+        max-height: initial;
+        filter: initial;
+    }
+}
 }
