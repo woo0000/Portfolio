@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/lenis.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="loading">
+        <div class="loading-text">
+            KANG_HYUNWOO
+            <p class="count">{ 0% }</p>
+        </div>
+        <div class="blind top"></div>
+        <div class="blind bottom"></div>
+    </div>
+
+    <div class="curser-wrap">
+        <div class="curser-inner">
+            <div class="cursor"></div><i></i>
+        </div>
+        <div class="learn-more">
+            <span>more view</span>
+        </div>
+    </div>
+    <div class="dim">dim</div>
+    <header>
+        <div class="inner">
+             <div class="logo"><h1><a href="">{ kang_hyunwoo }</a></h1></div>
+            <nav>
+                <ul>
+                    <li><a href="">INTRO</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SKILLS</a></li>
+                    <li><a href="">DESIGN_PROJECT</a></li>
+                    <li><a href="">CODING_PROJECT</a></li>
+                    <li><a href="">OPEN_SOURCE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="main">
+        <div class="title">
+            <h2>PORTFOLIO</h2>
+            <div class="bottom">
+                <a href="">{ contact }</a>
+                <h3>{ <span>2025</span> }</h3>
+            </div>
+        </div>
+        <div class="video_area">
+            <video id="my_video"></video>
+        </div>
+    </div>
+    <section id="intro">
+        <div class="left">
+            <p class="fade-text">
+                웹 퍼블리싱은 정적인 코드에 <br>
+                생명력을 불어넣는 작업입니다.
+            </p>
+            <p class="fade-text">
+                빠르게 변화하는 트렌드 속에서 <br>
+                유연하고 도전적인 접근을 통해, <br>
+                <strong>사용자 중심으로 기술과 디자인을 연결</strong>하는 <br>  
+                웹 퍼블리셔가 되겠습니다.
+            </p>
+        </div>
+        <div class="right">
+            <p>
+                WEB PUBLISHING IS THE TASK OF BREATHING LIFE INTO 
+                STATIC CODE. WITH A FLEXIBLE AND ADVENTUROUS 
+                APPROACH AMIDST RAPIDLY CHANGING TRENDS, I WILL BE 
+                A RESPONSIBLE PUBLISHER THAT CONNECTS TECHNOLOGY
+                AND DESIGN WITH A USER-CENTRIC APPROACH.
+            </p>
+            <div class="btn">
+                <span>about me</span>
+                <a href="">arrow</a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="left">
+            <div class="image"><img src="images/about_image.png" alt="about_image"></div>
+            <p>
+                KANG _<br>
+                HYUN WOO
+            </p>
+            <h3>EMAIL</h3>
+            <span>woo04031031@gmail.com</span>
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <h3>ABOUT</h3>
+                    <p>
+                        협업에서 가장 중요한 요소는 <br>
+                        <strong>탄탄한 기본기, 원활한 의사소통, 그리고 책임감</strong>이라고 생각합니다. <br>
+                        항상 성실한 태도로 임하며, 맡은 역할에 대한 책임을 다하겠습니다.
+                    </p>
+                </li>
+                <li>
+                    <h3>EDUCATION</h3>
+                    <p>
+                        2021 - 2026 동덕여자대학교 <br>
+                        <strong>미디어디자인학과 졸업</strong>
+                    </p>
+                </li>
+                <li>
+                    <h3>AWARD</h3>
+                    <p>
+                        2021 2학기 - 춘강성적우수A장학금<br>
+                        2022 1학기 - 춘강성적우수A장학금<br>
+                        2022 2학기 - 춘강성적우수B장학금<br>
+                        2023 1학기 - 춘강성적우수B장학금<br>
+                        2024 1학기 - 춘강성적우수B장학금
+                    </p>
+                    <p>
+                        2021 대한민국 공익광고제 대학생 TV(스토리보드)부문 동상<br>
+                        2023 우리꽃 전시회 공모전 우리 꽃 제품 디자인 부문 수상<br>
+                        2023 2학기 ~2024 1학기 교내대회 캡스톤디자인 대상
+                    </p>
+                </li>
+                <li>
+                    <h3>HOBBY</h3>
+                    <p>
+                        월 1~2회 전시회 관람, 티켓으로 다이어리 작성
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="left">
+            <h2>SKILLS</h2>
+            <p>
+                디자인과 개발 전반에 걸친 이해를 바탕으로, <br>
+                기획부터 구현까지 유기적으로 연결하는 <br>
+                역량을 갖추고 있습니다.
+            </p>
+            <p>
+                사용자의 경험을 고려한 디자인 설계부터 <br>
+                효율적인 코드 작성까지 폭넓은 기술을 활용하여, <br>
+                완성도 높은 결과물을 만들어낼 수 있습니다.
+            </p>
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>HTML</span> }</h3>
+                        <div class="image"><img src="images/html-logo.png" alt="html-logo"></div>
+                    </div>
+                    <p>
+                        - HTML5 DTD 문법 준수 <br>
+                        - 인터넷 접근성, 웹 표준을 준수한 HTML을 작성 <br>
+                        - 웹 접근성을 높인 Semantic Page 작성 <br>
+                        - 다양한 라이브러리를 활용하여 웹을 구현
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>Figma</span> }</h3>
+                        <div class="image"><img src="images/figma-original.png" alt="figma-logo"></div>
+                    </div>
+                    <p>
+                        - 컴포넌트 작업으로 App부터 Web까지 레이아웃을 구상하고 디자인 가능 <br>
+                        - 피피티 등 복잡한 자료 정리 <br>
+                        - 해당 프로그램을 통한 협업 경험 
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>CSS</span> }</h3>
+                        <div class="image"><img src="images/css3-logo.png" alt="css3-logo"></div>
+                    </div>
+                    <p>
+                        - IR 기법을 활용한 스타일 작성 <br>
+                        - CSS3 Animation을 이용한 역동적인 효과 구현 <br>
+                        - 반응형 웹 페이지 디자인 및 스타일링 <br>
+                        - 모바일 최적화 페이지 스타일 작성 <br>
+                        - 다양한 모바일 기기에 대응하는 반응형 디자인 구현
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>Photoshop</span> }</h3>
+                        <div class="image"><img src="images/Adobe Apps_ps.png" alt="photoshop_logo"></div>
+                    </div>
+                    <p>
+                        - 이미지 보정 및 편집 후 보기 좋게 배치 가능 <br>
+                        - 원하는 요구에 맞춰 작업물 목업 및 합성 가능 <br>
+                        - 다양한 스타일로 그래픽 작업 가능
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>JavaScript</span> }</h3>
+                        <div class="image"><img src="images/js-logo.png" alt="js-logo"></div>
+                    </div>
+                    <p>
+                        - JavaScript AJAX를 활용한 데이터 응용 <br>
+                        - Parallax 효과를 적용한 웹 페이지 개발 <br>
+                        - EcmaScript 기반 Native JavaScript 활용 <br>
+                        - 외부 API 통합 (Google Maps, 이미지 캐러셀 등) <br>
+                        - JavaScript Library 활용 및 구현(GSAP, SwiperJS, jQuery 등)
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>Illustrator</span> }</h3>
+                        <div class="image"><img src="images/Adobe Apps_ai.png" alt="illusrator-logo"></div>
+                    </div>
+                    <p>
+                        - 벡터 특성을 이용하여 일러스트 및 로고 제작 가능 <br>
+                        - 펜 도구, 브러시, 패스파인더, 클리핑 마스크 등 다양한 기능 사용
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>SASS</span> }</h3>
+                        <div class="image"><img src="images/sass-logo.png" alt="sass-logo"></div>
+                    </div>
+                    <p>
+                        - CSS 전처리 기능 프로그래밍(SCSS) <br>
+                        - 비슷한 CSS 전처리 언어 LESS, Stylus 작성
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>After Effect</span> }</h3>
+                        <div class="image"><img src="images/Adobe Apps_ae.png" alt="aftereffect-logo"></div>
+                    </div>
+                    <p>
+                        - 복잡하지 않은 모션그래픽 가능 <br>
+                        - 컷 편집, 사운드 조절 및 삽입 
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>PWA</span> }</h3>
+                        <div class="image"><img src="images/pwa-logo.png" alt="pwa-logo"></div>
+                    </div>
+                    <p>
+                        - 프로그레시브 웹 앱(progressive web app) 구현 <br>
+                        - HTML, CSS, JavaScript와 같은 웹 기술로 만드는 앱 구현
+                    </p>
+                </li>
+                <li>
+                    <div class="top">
+                        <h3>{ <span>Blender</span> }</h3>
+                        <div class="image"><img src="images/blender-original.png" alt="blender-logo"></div>
+                    </div>
+                    <p>
+                        - Icon 3D 제작 가능 <br>
+                        - 복잡하지 않은 캐릭터 3D 제작 가능
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="project_title">
+        <div class="inner">
+            <h2>
+                DESIGN   PROJECT
+            </h2>
+        </div>
+    </div>
+    <section id="project1">
+        <div class="inner">
+            <ul>
+                <li>
+                    <div class="num"><span>01</span></div>
+                    <div class="text">
+                        <div class="title">
+                            <h3>토독 Todok</h3> 
+                        </div>
+                        <div class="content">
+                            <p>
+                                UX/UI 컨텐츠 디자인(캡스톤디자인)강의에서 <br>
+                                5인 협업으로 디자인을 진행했던 졸업작품입니다. <br> 
+                                프로토타입을 제작해 전시까지 진행하였습니다.
+                            </p>
+                            <div class="btn">
+                                <a href="">기획  Behance</a>
+                                <a href="">최종  Prototype</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="num"><span>02</span></div>
+                    <div class="text">
+                        <div class="title">
+                            <h3>Title</h3> 
+                        </div>
+                        <div class="content">
+                            <p>
+                                UX/UI 컨텐츠 디자인(캡스톤디자인)강의에서 <br>
+                                5인 협업으로 디자인을 진행했던 졸업작품입니다. <br> 
+                                프로토타입을 제작해 전시까지 진행하였습니다.
+                            </p>
+                            <div class="btn">
+                                <a href="">기획  Behance</a>
+                                <a href="">최종  Prototype</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        <div class="image">
+            <div class="index1"><img src="images/todok.png" alt="todok"></div>
+            <div class="index2"><img src="" alt=""></div>
+        </div>
+        </div>
+      
+    </section>
+    <section id="project2">
+        <div class="inner">
+            <h2>CODING   PROJECT</h2>
+            <ul>
+                <li>
+                    <div class="image"><img src="images/c_project1.png" alt="c_project1"></div>
+                    <div class="title">
+                        <div class="left">
+                            <span>{01}</span>
+                            <h3>CLONES - Design Samsung</h3>
+                        </div>
+                        <div class="right">
+                            <p>2025  03  01 ~ 03  10</p>
+                            <p>
+                                Figma <br>
+                                HTML, CSS, jQuery <br>
+                                Swiper JS <br>
+                                GitHub
+                            </p>
+                            <div class="btn">
+                                <a href="">GO SITE</a>
+                                <a href="">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="image"><img src="images/c_project2.png" alt="c_project2"></div>
+                    <div class="title">
+                        <div class="left">
+                            <span>{02}</span>
+                            <h3>Artcenter nabi</h3> 
+                        </div>
+                        <div class="right">
+                            <p>2025  03  01 ~ 03  10</p>
+                            <p>
+                                Figma <br>
+                                HTML, CSS, jQuery <br>
+                                Swiper JS <br>
+                                GitHub
+                            </p>
+                            <div class="btn">
+                                <a href="">GO SITE</a>
+                                <a href="">GITHUB</a>
+                           </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="image"><img src="images/c_project3.png" alt="c_project3"></div>
+                    <div class="title">
+                        <div class="left">
+                            <span>{03}</span>
+                            <h3>O'kichen</h3>  
+                        </div>
+                        <div class="right">
+                            <p>2025  03  01 ~ 03  10</p>
+                            <p>
+                                Figma <br>
+                                HTML, CSS, jQuery <br>
+                                Swiper JS <br>
+                                GitHub
+                            </p>
+                            <div class="btn">
+                                <a href="">GO SITE</a>
+                                 <a href="">GITHUB</a>
+                           </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="image"><img src="images/c_project4.png" alt="c_project4"></div>
+                    <div class="title">
+                        <div class="left">
+                            <span>{04}</span>
+                            <h3>Monet Gallery</h3>  
+                        </div>
+                        <div class="right">
+                            <p>2025  03  01 ~ 03  10</p>
+                            <p>
+                                Figma <br>
+                                HTML, CSS, jQuery <br>
+                                Swiper JS <br>
+                                GitHub
+                            </p>
+                            <div class="btn">
+                                <a href="">GO SITE</a>
+                                <a href="">GITHUB</a>
+                           </div>
+                        </div>
+                    </div>
+                </li>
+            </ul> 
+        </div>
+    </section>
+    <section id="open_source">
+        <div class="absolute">
+            <h2>
+                OPEN <br>
+                SOURCE
+            </h2>
+            <p>
+                코딩 분석을 기반으로 <br>
+                참고할 만한 코드 오픈소스를 모았습니다.
+            </p>
+        </div>
+        <div class="main-visual actived">
+            <div class="main-visual-data">
+              <div class="main-visual-items actived item-01">
+                <div class="item-label">
+                  <div class="item-inner">
+                    <div class="number number-01">01</div>
+                    <div class="txt txt-01">DEASANG</div>
+                  </div>
+                </div>
+                <button type="button" class="item-nav">열기</button>
+                <a href="#" onclick="fnViewCntModify(9, 'mainVisual');" class="item-visual">
+                  <img src="images/open1.png" alt="open1">
+                </a>
+                <div class="item-content">
+                  <h3>DEASANG 프로젝트</h3>
+                  <p>DEASANG의 혁신적인 비주얼 공간을 소개합니다.</p>
+                  <a href="#" class="btn">GitHub Library</a>
+                </div>
+              </div>
+          
+              <div class="main-visual-items item-02">
+                <div class="item-label">
+                  <div class="item-inner">
+                    <div class="number number-02">02</div>
+                    <div class="txt txt-02">새만금 메타버스 체험관</div>
+                  </div>
+                </div>
+                <button type="button" class="item-nav">열기</button>
+                <a href="#" onclick="fnViewCntModify(19, 'mainVisual');" class="item-visual">
+                  <img src="images/open2.png" alt="open2">
+                </a>
+                <div class="item-content">
+                  <h3>새만금 메타버스 체험관</h3>
+                  <p>가상공간에서 새만금을 경험해보세요.</p>
+                  <a href="#" class="btn">GitHub Library</a>
+                </div>
+              </div>
+          
+              <div class="main-visual-items item-03">
+                <div class="item-label">
+                  <div class="item-inner">
+                    <div class="number number-03">03</div>
+                    <div class="txt txt-03">하나 에이전시</div>
+                  </div>
+                </div>
+                <button type="button" class="item-nav">열기</button>
+                <a href="#" onclick="fnViewCntModify(18, 'mainVisual');" class="item-visual">
+                  <img src="images/open3.png" alt="open3">
+                </a>
+                <div class="item-content">
+                  <h3>하나 에이전시</h3>
+                  <p>디지털 에이전시 하나의 주요 포트폴리오.</p>
+                  <a href="#" class="btn">GitHub Library</a>
+                </div>
+              </div>
+          
+              <div class="main-visual-items item-04">
+                <div class="item-label">
+                  <div class="item-inner">
+                    <div class="number number-04">04</div>
+                    <div class="txt txt-04">하나 투어</div>
+                  </div>
+                </div>
+                <button type="button" class="item-nav">열기</button>
+                <a href="#" onclick="fnViewCntModify(20, 'mainVisual');" class="item-visual">
+                  <img src="images/open4.png" alt="open4">
+                </a>
+                <div class="item-content">
+                  <h3>하나 투어</h3>
+                  <p>차세대 여행 플랫폼의 혁신적인 인터페이스.</p>
+                  <a href="#" class="btn">GitHub Library</a>
+                </div>
+              </div>
+          
+              <div class="main-visual-items item-05">
+                <div class="item-label">
+                  <div class="item-inner">
+                    <div class="number number-05">05</div>
+                    <div class="txt txt-05">한강 작가 에디션</div>
+                  </div>
+                </div>
+                <button type="button" class="item-nav">열기</button>
+                <a href="#" onclick="fnViewCntModify(21, 'mainVisual');" class="item-visual">
+                  <img src="images/open5.png" alt="open5">
+                </a>
+                <div class="item-content">
+                  <h3>한강 작가 에디션</h3>
+                  <p>문학과 예술이 만나는 공간, 한강 에디션 전시.</p>
+                  <a href="#" class="btn">GitHub Library</a>
+                </div>
+              </div>
+          
+              <div class="main-visual-items item-06">
+                <div class="item-label">
+                  <div class="item-inner">
+                    <div class="number number-06">06</div>
+                    <div class="txt txt-06">Cosmetic Slider</div>
+                  </div>
+                </div>
+                <button type="button" class="item-nav">열기</button>
+                <a href="#" onclick="fnViewCntModify(22, 'mainVisual');" class="item-visual">
+                  <img src="images/open6.png" alt="open6">
+                </a>
+                <div class="item-content">
+                  <h3>Cosmetic Slider</h3>
+                  <p>화장품 브랜드의 비주얼 제품 소개.</p>
+                  <a href="#" class="btn">GitHub Library</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+    <footer>
+        <h2>KANG_HYUNWOO</h2>
+        <div class="bottom">
+            <div class="left">
+                <h3>{  menu  }</h3>
+                <ul>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">DESIGN_PROJECT</a></li>
+                    <li><a href="">CODING_0PROJECT</a></li>
+                    <li><a href="">OPEN_SOURCE</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3>{  contact me  }</h3>
+                <ul>
+                    <li>woo04031031@gmail.com</li>
+                    <li>010 2203 2314</li>
+                    <li><a href="">Notion</a></li>
+                    <li><a href="">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="ft_show"></div>
+</body>
+</html>
