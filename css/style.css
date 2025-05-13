@@ -255,7 +255,7 @@ header nav ul li a{
 #main .title h2{
     font-size: 10em;
     letter-spacing: -2px;
-    margin-top: 20%;
+    margin-top: 24%;
 }
 #main .bottom{
     display: flex;
@@ -1283,6 +1283,9 @@ footer .bottom a{
     #project1 .inner ul li .text {
         margin-top: 0;
     }
+    #project2 .inner ul li {
+        gap: 5%;
+    }
     #project2 .inner ul li .title .left{
         width: 20%;
     }
@@ -1293,7 +1296,7 @@ footer .bottom a{
         color: #FF9515;
     }
     #project2 .inner ul li .title .right{
-        width: 55%;
+        width: 60%;
     }
     #project2 .inner ul li .image{
         width: 20%;
@@ -1370,11 +1373,19 @@ footer .bottom a{
         width: 100%;
     }
     #project1 .inner .image {
-    width: 100%;
+        width: 100%;
     }
     #project1 .inner ul li .title h3,
     #project2 .inner ul li .title .left h3{
         font-size: 1em;
+    }
+    #project2 .inner ul li:hover .image {
+        width: auto;
+        max-height: none;
+        filter: none;
+    }
+    #project2 .inner ul li:hover .title .right {
+        max-height: none;
     }
     #open_source .absolute h2 {
         font-size: 3em;
