@@ -1284,7 +1284,7 @@ footer .bottom a{
         margin-top: 0;
     }
     #project2 .inner ul li .title .left{
-        width: 25%;
+        width: 20%;
     }
     #project2 .inner ul li .title .left h3{
         color: #fff;
@@ -1293,7 +1293,7 @@ footer .bottom a{
         color: #FF9515;
     }
     #project2 .inner ul li .title .right{
-        width: 50%;
+        width: 55%;
     }
     #project2 .inner ul li .image{
         width: 20%;
@@ -1322,7 +1322,7 @@ footer .bottom a{
     }
     #main .title h2{
         font-size: 4em;
-        margin-top: 400px;
+        margin-top: 480px;
     }
     #main .bottom h3{
         font-size: 4em;
@@ -1360,13 +1360,17 @@ footer .bottom a{
         transform: translateY(0);
     }
     #project1 .inner{
+        width: 90%;
         flex-direction: column;
     }
     #project1 .inner ul {
-        width: 90%;
+        width: 100%;
+    }
+    #project1 .inner ul {
+        width: 100%;
     }
     #project1 .inner .image {
-        width: 90%;
+    width: 100%;
     }
     #project1 .inner ul li .title h3,
     #project2 .inner ul li .title .left h3{
@@ -1397,7 +1401,7 @@ footer .bottom a{
         font-size: 0.75em;
     }
     footer .bottom {
-        gap: 50px;
+        gap: 100px;
     }
     footer .bottom .left,
     footer .bottom .right{
