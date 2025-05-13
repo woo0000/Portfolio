@@ -228,6 +228,15 @@ header .logo h1{
     font-weight: 300;
     font-size: 1em;
 }
+nav {
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+nav.disable-click {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 header nav ul{
     display: flex;
 }
