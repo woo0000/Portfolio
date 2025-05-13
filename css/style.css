@@ -715,7 +715,7 @@ header nav ul li a{
 }
 #project2 .inner ul li .image{
     width: 20%;
-    aspect-ratio: 2 / 6; 
+    aspect-ratio: 2 / 7; 
     max-height: 140px;
     filter: grayscale(1);
     transition: 0.3s ease-out;
@@ -780,20 +780,22 @@ header nav ul li a{
     border: 1px solid #FF9515;
     color: #FF9515;
 }
-/* hover */
-#project2 .inner ul li:hover .title .left h3{
-    color: #fff;
-}
-#project2 .inner ul li:hover .title .left span{
-    color: #FF9515;
-}
-#project2 .inner ul li:hover .image{
-    width: 30%;
-    max-height: 250px;
-    filter: grayscale(0);
-} 
-#project2 .inner ul li:hover .title .right {
-    max-height: 250px;
+@media (hover: hover) and (pointer: fine) {
+    /* hover */
+    #project2 .inner ul li:hover .title .left h3{
+        color: #fff;
+    }
+    #project2 .inner ul li:hover .title .left span{
+        color: #FF9515;
+    }
+    #project2 .inner ul li:hover .image{
+        width: 30%;
+        max-height: 250px;
+        filter: grayscale(0);
+    } 
+    #project2 .inner ul li:hover .title .right {
+        max-height: 250px;
+    }  
 }
 
 /* open source */
@@ -1379,14 +1381,6 @@ footer .bottom a{
     #project2 .inner ul li .title .left h3{
         font-size: 1em;
     }
-    #project2 .inner ul li:hover .image {
-        width: auto;
-        max-height: none;
-        filter: none;
-    }
-    #project2 .inner ul li:hover .title .right {
-        max-height: none;
-    }
     #open_source .absolute h2 {
         font-size: 3em;
     }
@@ -1422,12 +1416,5 @@ footer .bottom a{
     footer .bottom a{
         font-size: 0.75em;
     }
-    @media (hover: none) and (pointer: coarse) {
-    #project2 .inner ul li:hover .image,
-    #project2 .inner ul li:hover .title .right {
-        width: initial;
-        max-height: initial;
-        filter: initial;
-    }
-}
+
 }
