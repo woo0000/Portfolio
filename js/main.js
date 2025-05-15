@@ -156,26 +156,28 @@ window.addEventListener("load", function () {
   // Open source section
   const visualData = document.querySelector('.main-visual-data');
   const visualItems = document.querySelectorAll('.main-visual-items');
+
   visualItems.forEach(item => item.classList.remove('actived'));
-  if (visualItems.length > 0) {
-    visualItems[0].classList.add('actived');
-  }
+  if (visualItems.length > 0) visualItems[0].classList.add('actived');
 
   visualItems.forEach(item => {
     const itemVisualLink = item.querySelector('.item-visual');
+
     item.addEventListener('click', function () {
       visualItems.forEach(el => el.classList.remove('actived'));
       this.classList.add('actived');
+
       const itemRect = this.getBoundingClientRect();
       const containerRect = visualData.getBoundingClientRect();
       const scrollLeft = itemRect.left - containerRect.left - (containerRect.width - itemRect.width) / 2;
-      visualData.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+
+      visualData.scrollTo({ left: visualData.scrollLeft + scrollLeft, behavior: 'smooth' });
     });
 
     if (itemVisualLink) {
-      itemVisualLink.addEventListener('click', function (event) {
-        event.preventDefault();
-        const onclickAttr = this.getAttribute('onclick');
+      itemVisualLink.addEventListener('click', e => {
+        e.preventDefault();
+        const onclickAttr = itemVisualLink.getAttribute('onclick');
         if (onclickAttr) {
           const functionCall = onclickAttr.substring(0, onclickAttr.indexOf(';'));
           eval(functionCall);
@@ -183,6 +185,52 @@ window.addEventListener("load", function () {
       });
     }
   });
+
+  // 모바일용 스와이프 감지
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  visualData.addEventListener('touchstart', e => {
+    if (window.innerWidth > 580) return;
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  visualData.addEventListener('touchend', e => {
+    if (window.innerWidth > 580) return;
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipeGesture();
+  });
+
+  function handleSwipeGesture() {
+    const swipeThreshold = 50; // 스와이프 인식 최소 거리(px)
+    const activeIndex = [...visualItems].findIndex(item => item.classList.contains('actived'));
+    if (activeIndex === -1) return;
+
+    if (touchEndX < touchStartX - swipeThreshold) {
+      // 왼쪽 스와이프 -> 다음 섹션
+      const nextIndex = Math.min(activeIndex + 1, visualItems.length - 1);
+      if (nextIndex !== activeIndex) {
+        activateSection(nextIndex);
+      }
+    } else if (touchEndX > touchStartX + swipeThreshold) {
+      // 오른쪽 스와이프 -> 이전 섹션
+      const prevIndex = Math.max(activeIndex - 1, 0);
+      if (prevIndex !== activeIndex) {
+        activateSection(prevIndex);
+      }
+    }
+  }
+
+  function activateSection(index) {
+    visualItems.forEach(item => item.classList.remove('actived'));
+    visualItems[index].classList.add('actived');
+
+    const itemRect = visualItems[index].getBoundingClientRect();
+    const containerRect = visualData.getBoundingClientRect();
+    const scrollLeft = itemRect.left - containerRect.left - (containerRect.width - itemRect.width) / 2;
+
+    visualData.scrollTo({ left: visualData.scrollLeft + scrollLeft, behavior: 'smooth' });
+  }
 
   // Footer IntersectionObserver
   const footer = document.querySelector('footer');

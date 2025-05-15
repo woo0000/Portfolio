@@ -20,7 +20,7 @@ img {
 	border: none;
 }
 body{
-    width: 100vw;
+    width: 100%;
     background-color: #0E0E0E;
     color: #fff;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -813,6 +813,7 @@ header nav ul li a{
     top: 50%;
     transform: translateY(-50%);
     z-index: 3;
+    pointer-events: none;
 }
 #open_source .absolute h2{
     font-size: clamp(80px, 8vw, 100px);
@@ -1416,5 +1417,4 @@ footer .bottom a{
     footer .bottom a{
         font-size: 0.75em;
     }
-
 }
